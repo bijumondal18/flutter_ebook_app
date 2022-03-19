@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_ebook_app/bottom_navigation_bar.dart';
 import 'package:flutter_ebook_app/common/common.dart';
 import 'package:flutter_ebook_app/presentation/home/ui/home_screen.dart';
 
@@ -20,6 +21,6 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Ebook App',
         theme: AppTheme.lightTheme,
-        home: const HomeScreen());
+        home: const BottomNavigation());
   }
 }
