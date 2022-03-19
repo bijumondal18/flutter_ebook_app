@@ -11,6 +11,7 @@ class HomeScreenHeader extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      centerTitle: false,
       title: RichText(
         text: TextSpan(
             text: 'Hi, Biju',
@@ -18,7 +19,7 @@ class HomeScreenHeader extends StatelessWidget implements PreferredSizeWidget {
             children: [
               TextSpan(
                   text: '\nDiscover Latest Books',
-                  style: Theme.of(context).textTheme.headline4)
+                  style: Theme.of(context).textTheme.headline3)
             ]),
       ),
     );
