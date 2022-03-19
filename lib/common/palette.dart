@@ -8,6 +8,6 @@ class AppColors {
   static const lightGrey = Color(0xFFD2CFCF);
   static const textFieldBg = Color(0xFFECECEC);
   static const transparent = Color(0xFFFFFF);
-  static const orange = Color(0xF7FC7732);
+  static const primary = Color(0xF7FC7732);
   static const green = Color(0xFF179C18);
 }
