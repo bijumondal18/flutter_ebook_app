@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_ebook_app/common/common.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_ebook_app/presentation/home/ui/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,20 +13,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: AppColors.transparent, // status bar color
+    ));
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData.light().copyWith(
-        scaffoldBackgroundColor: AppColors.scaffold,
-        textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
-            .apply(bodyColor: Colors.black),
-        canvasColor: AppColors.white,
-      ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Ebook'),
-        ),
-      ),
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Ebook App',
+        theme: AppTheme.lightTheme,
+        home: const HomeScreen());
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_ebook_app/common/common.dart';
 
 import 'dimens.dart';
@@ -10,7 +11,8 @@ class AppTheme {
         brightness: Brightness.light,
         backgroundColor: AppColors.white,
         appBarTheme: const AppBarTheme(
-          backgroundColor: AppColors.transparent,
+          systemOverlayStyle: SystemUiOverlayStyle.dark,
+          backgroundColor: AppColors.white,
             elevation: AppSizes.elevation0,
             centerTitle: true,
             foregroundColor: AppColors.black),
