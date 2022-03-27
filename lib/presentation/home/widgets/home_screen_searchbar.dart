@@ -22,10 +22,10 @@ class HomeScreenSearchBar extends StatelessWidget {
           TextField(
             controller: searchController,
             cursorColor: AppColors.primary,
-            style: AppTheme.lightTheme.textTheme.headline6,
+            style: Theme.of(context).textTheme.headline6,
             decoration: InputDecoration(
                 hintText: 'Search books...',
-                hintStyle: AppTheme.lightTheme.textTheme.bodyText1,
+                hintStyle: Theme.of(context).textTheme.bodyText1,
                 border: InputBorder.none,
                 contentPadding: const EdgeInsets.only(
                     left: AppSizes.dimen16, right: AppSizes.dimen48)),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_ebook_app/bottom_navigation_bar.dart';
 import 'package:flutter_ebook_app/common/common.dart';
-import 'package:flutter_ebook_app/presentation/home/ui/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
